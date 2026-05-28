@@ -1,0 +1,56 @@
+# Visual Studio / IDE
+.vs/
+.vscode/
+*.sln.iml
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Compiled files
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# Test Results
+TestResults/
+
+# Visual Studio cache/options
+.vs/
+.vscode/
+
+# ReSharper is a .NET coding add-in
+.resharper
+.resharper.user
+.resharper.sources.xml
+
+# Application files
+*.exe
+*.dll
+*.pdb
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.log
+*.swp
+*.swo
+*~
+.env
+local.settings.json
+
+# Rider
+.idea/
+*.sln.iml

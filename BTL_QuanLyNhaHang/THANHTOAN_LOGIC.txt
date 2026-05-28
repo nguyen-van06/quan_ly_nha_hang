@@ -1,0 +1,83 @@
+// ========== THANH TOÁN - LOGIC ==========
+// Chèn vào MainForm.cs - CreateThanhToanTab() - để thay thế placeholder
+
+/*
+private void CreateThanhToanTab(TabPage tab)
+{
+	// Panel chọn bàn
+	Panel pnlBan = new Panel { Height = 70, Dock = DockStyle.Top, BorderStyle = BorderStyle.FixedSingle };
+	Label lblBan = new Label { Text = "Chọn bàn:", Location = new Point(10, 15), AutoSize = true };
+	ComboBox cmbBan = new ComboBox { Location = new Point(70, 12), Width = 100, DropDownStyle = ComboBoxStyle.DropDownList };
+	LoadBanList(cmbBan);
+
+	Label lblKH = new Label { Text = "SĐT KH (hoặc để trống):", Location = new Point(180, 15), AutoSize = true };
+	TextBox txtSDT = new TextBox { Location = new Point(340, 12), Width = 150 };
+
+	Button btnTaoHD = new Button { Text = "Tạo Hóa Đơn", Location = new Point(500, 12), Width = 100 };
+
+	pnlBan.Controls.AddRange(new Control[] { lblBan, cmbBan, lblKH, txtSDT, btnTaoHD });
+
+	// DataGridView chi tiết
+	DataGridView dgvChiTiet = new DataGridView 
+	{ 
+		Height = 300, 
+		Dock = DockStyle.Top, 
+		AllowUserToAddRows = false,
+		BorderStyle = BorderStyle.FixedSingle 
+	};
+	dgvChiTiet.Columns.Add("STT", "STT");
+	dgvChiTiet.Columns.Add("TenMon", "Tên Món");
+	dgvChiTiet.Columns.Add("SoLuong", "SL");
+	dgvChiTiet.Columns.Add("DonGia", "Đơn Giá");
+	dgvChiTiet.Columns.Add("ThanhTien", "Thành Tiền");
+
+	// Panel tính toán
+	Panel pnlTinhToan = new Panel { Height = 150, Dock = DockStyle.Bottom, BorderStyle = BorderStyle.FixedSingle };
+
+	Label lblTongGoc = new Label { Text = "Tổng tiền gốc:", Location = new Point(10, 10), AutoSize = true };
+	TextBox txtTongGoc = new TextBox { Location = new Point(150, 7), Width = 150, ReadOnly = true };
+
+	Label lblGiamGia = new Label { Text = "Giảm giá (%):", Location = new Point(310, 10), AutoSize = true };
+	TextBox txtGiamGia = new TextBox { Location = new Point(420, 7), Width = 100 };
+
+	Label lblTienGiam = new Label { Text = "Tiền giảm:", Location = new Point(10, 45), AutoSize = true };
+	TextBox txtTienGiam = new TextBox { Location = new Point(150, 42), Width = 150, ReadOnly = true };
+
+	Label lblThanhToan = new Label { Text = "Tổng thanh toán:", Location = new Point(310, 45), AutoSize = true };
+	TextBox txtThanhToan = new TextBox { Location = new Point(420, 42), Width = 100, ReadOnly = true, Font = new Font("Arial", 12, FontStyle.Bold) };
+
+	Label lblPTTT = new Label { Text = "Phương thức TT:", Location = new Point(10, 80), AutoSize = true };
+	ComboBox cmbPTTT = new ComboBox { Location = new Point(150, 77), Width = 150, DropDownStyle = ComboBoxStyle.DropDownList };
+	cmbPTTT.Items.AddRange(new string[] { "Tiền mặt", "Thẻ", "Online" });
+
+	Label lblTienKhachDua = new Label { Text = "Tiền khách đưa:", Location = new Point(310, 80), AutoSize = true };
+	TextBox txtTienKhachDua = new TextBox { Location = new Point(420, 77), Width = 100 };
+
+	Button btnThanhToan = new Button { Text = "Thanh Toán", Location = new Point(150, 110), Width = 100, Height = 30, BackColor = Color.LimeGreen, ForeColor = Color.White };
+
+	pnlTinhToan.Controls.AddRange(new Control[] { 
+		lblTongGoc, txtTongGoc, lblGiamGia, txtGiamGia,
+		lblTienGiam, txtTienGiam, lblThanhToan, txtThanhToan,
+		lblPTTT, cmbPTTT, lblTienKhachDua, txtTienKhachDua,
+		btnThanhToan
+	});
+
+	tab.Controls.Add(pnlTinhToan);
+	tab.Controls.Add(dgvChiTiet);
+	tab.Controls.Add(pnlBan);
+}
+
+private void LoadBanList(ComboBox cmb)
+{
+	try
+	{
+		string query = "SELECT MaBan, TenBan FROM Ban ORDER BY MaBan";
+		DataTable dt = DatabaseHelper.ExecuteQuery(query);
+
+		cmb.DataSource = dt;
+		cmb.DisplayMember = "TenBan";
+		cmb.ValueMember = "MaBan";
+	}
+	catch { }
+}
+*/
